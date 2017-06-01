@@ -40,15 +40,13 @@ A LRN element
 
       properties: {
       },
+      listeners: {
+        'lrndesign-animationctrl-button-click': '_buttonClicked'
+      },
+      _buttonClicked: function(e) {
+      },
       ready: function() {
-        // // play button
-        // playButton.addEventListener('click', function(e) {
-        //   e.preventDefault();
-        //   tl.play();
-        //   root$.fire('action', 'play');
-        // });
       }
-
     });
   </script>
 </dom-module>
