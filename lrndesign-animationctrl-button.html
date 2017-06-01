@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="../lrn-icons/lrn-icons.html">
+<link rel="import" href="../lrn-icon/lrn-icon.html">
+
+<dom-module id="lrndesign-animationctrl-button">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button {
+        @apply --animationctrl-button;
+      }
+    </style>
+    <paper-button raised id="[[name]]">
+      [[name]] 
+      <template is="dom-if" if="[[icon]]">
+        <lrn-icon icon="[[icon]]"></lrn-icon>
+      </template>
+    </paper-button>
+  </template>
+  <script>
+    Polymer({
+      is: 'lrndesign-animationctrl-button',
+      properties: {
+        name: String,
+        icon: String
+      },
+      ready: function() {
+        var root = this;
+        root.$$('paper-button').addEventListener('click', function(e) {
+          e.preventDefault();
+          var name = e.srcElement.id;
+          root.fire('lrndesign-animationctrl-button-click', {button: name});
+        });
+      }
+    });
+  </script>
+</dom-module>
