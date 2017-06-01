@@ -1,0 +1,28 @@
+{
+  "name": "lrndesign-animationctrl",
+  "description": "A LRN element",
+  "main": "lrndesign-animationctrl.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "lrnsys-behaviors": "LRNWebComponents/lrnsys-behaviors#^1.0.0",
+    "hax-behaviors": "LRNWebComponents/hax-behaviors#^0.0.6",
+    "materializecss-styles": "LRNWebComponents/materializecss-styles#^0.0.5"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/LRNWebComponents/lrndesign-animationctrl",
+  "_release": "94bc066c33",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "94bc066c33c269d26e0dc95cd56d9b4ec417346d"
+  },
+  "_source": "https://github.com/LRNWebComponents/lrndesign-animationctrl.git",
+  "_target": "master",
+  "_originalSource": "LRNWebComponents/lrndesign-animationctrl",
+  "_direct": true
+}
